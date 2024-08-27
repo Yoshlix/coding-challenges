@@ -2,7 +2,7 @@ using System.Text.RegularExpressions;
 
 namespace SortByTheLetters;
 
-public class SortByTheLetters
+public class SortByTheLettersChallenge
 {
     [Fact]
     public void Sort()

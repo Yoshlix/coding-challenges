@@ -2,28 +2,28 @@
 
 namespace FizzBuzz
 {
-    public static class FizzBuzz
+    public static class FizzBuzzChallenge
     {
 
         [Fact]
         public static void FizzTest()
         {
-            Assert.Equal(["1","2","Fizz"], Fizz_Buzz(3));
+            Assert.Equal(["1","2","Fizz"], FizzBuzz(3));
         }
 
         [Fact]
         public static void FizzBuzzSuccess()
         {
-            Assert.Equal(["1","2","Fizz","4","Buzz"], Fizz_Buzz(5));
+            Assert.Equal(["1","2","Fizz","4","Buzz"], FizzBuzz(5));
         }
 
         [Fact]
         public static void FizzBuzzFail()
         {
-            Assert.NotEqual(["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","Fizz","14","FizzBuzz"], Fizz_Buzz(15));
+            Assert.NotEqual(["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","Fizz","14","FizzBuzz"], FizzBuzz(15));
         }
         
-        private static ArrayList Fizz_Buzz(int input)
+        private static ArrayList FizzBuzz(int input)
         {
             var i = 0;
             var inputArray = new ArrayList();
