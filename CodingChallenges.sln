@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortByTheLetters", "SortByT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LovesMe", "LovesMe\LovesMe.csproj", "{828F7A0D-11E3-42A0-A57C-FBF8E5C9EEA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoLengthToSeconds", "VideoLengthToSeconds\VideoLengthToSeconds.csproj", "{3FE624F7-68E1-4E4F-A143-5D6873BEEB4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{828F7A0D-11E3-42A0-A57C-FBF8E5C9EEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{828F7A0D-11E3-42A0-A57C-FBF8E5C9EEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{828F7A0D-11E3-42A0-A57C-FBF8E5C9EEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE624F7-68E1-4E4F-A143-5D6873BEEB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE624F7-68E1-4E4F-A143-5D6873BEEB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE624F7-68E1-4E4F-A143-5D6873BEEB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE624F7-68E1-4E4F-A143-5D6873BEEB4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
