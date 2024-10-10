@@ -2,7 +2,7 @@
 
 namespace TitleString
 {
-    public static class TitleString
+    public static class TitleStringChallenge
     {
         [Fact]
         public static void CheckTitleTrue()
