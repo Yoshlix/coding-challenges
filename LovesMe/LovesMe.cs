@@ -13,39 +13,29 @@ public static class LovesMeChallenge
     private static string LovesMe(int number)
     {
         var text = "";
-        
-        for (int i = 1; i <= number; i++)
-        {
+
+        for (var i = 1; i <= number; i++)
             if (i == 1 && i != number)
             {
                 text += "Loves me, ";
             }
 
-            else if (i % 2 == 0) 
+            else if (i % 2 == 0)
             {
                 if (i == number)
-                {
                     text += "LOVES ME NOT";
-                }
                 else
-                {
                     text += "Loves me not, ";
-                }
             }
-            
+
             else
             {
                 if (i == number)
-                {
                     text += "LOVES ME";
-                }
                 else
-                {
                     text += "Loves me, ";
-                }
             }
-        }
-        
+
         return text;
     }
 }

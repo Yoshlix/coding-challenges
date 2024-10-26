@@ -15,7 +15,6 @@ public class PigLatinChallenge
         var words = input.Split(" ");
 
         foreach (var word in words)
-        {
             if (word[0] is 'a' or 'e' or 'i' or 'o' or 'u')
             {
                 output += word + "way ";
@@ -34,7 +33,6 @@ public class PigLatinChallenge
                 var afterVowel = word.Substring(firstVowel);
                 output += afterVowel + beforeVowel + "ay ";
             }
-        }
 
         return output.Trim();
     }

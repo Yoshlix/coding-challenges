@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Diagnostics;
 
 namespace PingPong;
 
@@ -8,12 +7,13 @@ public class PingPongProblem
     [Fact]
     public void PingPongTests()
     {
-        Assert.Equivalent(PingPong(["Ping!"], true), new ArrayList {"Ping!", "Pong!"});
-        Assert.Equivalent(PingPong(["Ping!", "Ping!"], false), new ArrayList { "Ping!", "Pong!", "Ping!"});
-        Assert.Equivalent(PingPong(["Ping!", "Ping!", "Ping!"], true), new ArrayList {"Ping!", "Pong!", "Ping!", "Pong!", "Ping!", "Pong!"});
+        Assert.Equivalent(PingPong(["Ping!"], true), new ArrayList { "Ping!", "Pong!" });
+        Assert.Equivalent(PingPong(["Ping!", "Ping!"], false), new ArrayList { "Ping!", "Pong!", "Ping!" });
+        Assert.Equivalent(PingPong(["Ping!", "Ping!", "Ping!"], true),
+            new ArrayList { "Ping!", "Pong!", "Ping!", "Pong!", "Ping!", "Pong!" });
     }
 
-    private static ArrayList PingPong(ArrayList input, Boolean win)
+    private static ArrayList PingPong(ArrayList input, bool win)
     {
         var length = input.Count;
         for (var i = 1; i < length;)
@@ -31,7 +31,7 @@ public class PingPongProblem
                 input[^1] = "Ping!";
                 break;
         }
-        
+
         return input;
     }
 }

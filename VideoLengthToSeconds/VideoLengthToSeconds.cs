@@ -16,12 +16,8 @@ public class VideoLengthToSecondsChallenge
         var minutes = int.Parse(videoLength.Split(':')[0]);
         var seconds = int.Parse(videoLength.Split(':')[1]);
 
-        if (seconds >= 60)
-        {
-            return -1;
-        }
-        
+        if (seconds >= 60) return -1;
+
         return minutes * 60 + seconds;
-        
     }
 }
